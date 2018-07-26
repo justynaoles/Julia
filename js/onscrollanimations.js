@@ -3,6 +3,8 @@
 /*function backtotop - Funkcja dodaje przycisk dla szerokości < 1200px, czarny po prawej stronie - powrót na górę. */
 
 
+
+
 window.onscroll = function logoAnimation() {
 var logo = document.querySelector('.mobile-logo');
 var logo2 = document.querySelector('.mobile-logo2');
@@ -12,9 +14,10 @@ backToTop();
 logo.classList.add('unvisible');
 logo2.classList.add('visible');
      
-if (window.pageYOffset>200){
+if (window.pageYOffset>500){
             
 logo.style.position="absolute";
+logo.style.marginTop="200px";
     
 }
            

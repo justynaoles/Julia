@@ -1,4 +1,4 @@
-    var menu = document.querySelector('.menu');
+  (function() {  var menu = document.querySelector('.menu');
     var icon = document.getElementById('icon')
     var nav = document.getElementById('nav');
    
@@ -83,7 +83,7 @@ $(function(){
 
 
 
-
+             })();
 
 
 
