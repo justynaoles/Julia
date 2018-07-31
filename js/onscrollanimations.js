@@ -14,7 +14,7 @@ backToTop();
 logo.classList.add('unvisible');
 logo2.classList.add('visible');
      
-if (window.pageYOffset>500){
+if (window.pageYOffset>200){
             
 logo.style.position="absolute";
 logo.style.marginTop="200px";
