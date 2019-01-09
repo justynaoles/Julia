@@ -1,0 +1,193 @@
+footer {
+    width: 100%;
+    a {
+        color: inherit;
+    }
+    text-align:center;
+    .footer {
+        @media(min-width: 768px) {
+            padding-top:35px;
+            width: 736px;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+            align-content: center;
+            .citate {
+                align-self: flex-end;
+            }
+            .socialimg {
+                width: 45px;
+                height: 45px;
+            }
+        }
+        @media(min-width:1200px) {
+            width: 1080px
+        }
+    }
+    @media(max-width:768px) {
+        background-image: url('../svg/logoobrys.svg');
+        background-repeat: no-repeat;
+        background-position: right -50px top 10px;
+        background-size: 85% 85%;
+    }
+    @media(min-width:1450px) {
+        background-image: url('../svg/logoobrys.svg');
+        background-repeat: no-repeat;
+        background-position: left bottom -5px;
+        background-size: contain;
+    }
+    .logocolor {
+        img {
+            width: 141px;
+            height: auto;
+        }
+        text-align:left;
+        padding-top:10px;
+        @media(max-width:768px) {
+            padding-left: 10%;
+        }
+    }
+    .citate {
+        p {
+            font-family: @os;
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 27px;
+            color: #bfbfbf;
+            width: 240px;
+            @media(min-width: 1200px) {
+                width:400px
+            }
+            padding-top:31px;
+            text-align:left;
+        }
+    }
+    .socialmedia {
+        .mobile;
+        @media(max-width: 768px) {
+            padding-left:10%;
+            padding-top: 46px;
+        }
+        overflow: hidden;
+        padding-top:75px;
+        p {
+            font-family: @os;
+            padding-left: 0%;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 23px;
+            color: #4f4f4f;
+            padding-bottom: 16px;
+            text-align: left;
+        }
+    }
+    .contact {
+        @media(max-width: 768px) {
+            padding-left:10%;
+            padding-top: 58px;
+        }
+        .mobile;
+        color: #4f4f4f;
+        padding-top:75px;
+        text-align:left;
+        p:nth-of-type(1) {
+            font-family: @os;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 23px;
+            padding-bottom: 26px;
+        }
+        .underline {
+            font-family: @os;
+            font-size: 17px;
+            line-height: 31px;
+            font-weight: 700;
+        }
+        a {
+            font-weight: 700;
+            color: #4f4f4f;
+        }
+        a:hover {
+            color: @accent-blue;
+            transition: 200ms;
+            transition-timing-function: ease-in-out;
+        }
+    }
+    .socialmedia-channels {
+        display: flex;
+    }
+    .socialimg {
+        border: 1px solid #838383;
+        &:hover {
+            border: 1px solid @accent-blue;
+        }
+        height:50px;
+        width:50px;
+        margin-right: 5px;
+        border-radius: 50%;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: center center;
+        cursor: pointer;
+        a {
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .fbicon {
+        background-image: url(../svg/facebook.svg);
+    }
+    .fbicon:hover {
+        background-image: url(../svg/facebookblue.svg);
+    }
+    .yticon {
+        background-image: url(../svg/ico_youtube.svg);
+    }
+    .yticon:hover {
+        background-image: url(../svg/ico_youtubeblue.svg);
+    }
+
+    .insticon {
+        background-image: url(../svg/ico_instagram.svg);
+    }
+    .insticon:hover {
+        background-image: url(../svg/ico_instagramblue.svg);
+    }
+
+
+    
+    .socialimg:hover {
+        transition: all 600ms cubic-bezier(0.62, 0.04, 0.3, 1.56);
+    }
+    .copyright {
+        margin-top: 60px;
+        @media(min-width: 768px) {
+            margin-top:50px;
+        }
+        padding-bottom:10px;
+        font-family: @os;
+        font-size:12px;
+        line-height: 15.35px;
+        font-weight:300;
+        color: @d-grey;
+        overflow: hidden;
+        p {
+            box-sizing: border-box;
+            width: 50%;
+            float: left;
+            padding: 0%;
+        }
+        p:nth-of-type(1) {
+            text-align: right;
+            border-right: 1px solid @m-grey;
+            padding-right: 9px;
+            padding-top: 0px;
+        }
+        p:nth-of-type(2) {
+            text-align: left;
+            padding-left: 9px;
+        }
+    }
+}
